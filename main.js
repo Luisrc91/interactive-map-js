@@ -42,7 +42,7 @@ async function getCoords(){
    
 
       
-// leaflet api
+// fourSquare api
     async function getFourSquare(business) {
         let clientId = '3UZPA14UWSBEEGXIWZDZ5A5XFIEMZMYVWEGV4VQPINRVHFUK'
         let clentSecret = 'NRLC1SWFOCJXH2PBSMR5AE4VVEETSW24NXK4SQURXKEQIVX1'
@@ -81,7 +81,7 @@ async function getCoords(){
     }
   
 
-    // selectin submit button
+    // selecting submit button
     document.getElementById('submit').addEventListener('click', async (event) => {
         event.preventDefault()
         let business = document.getElementById('business').value;
@@ -89,10 +89,9 @@ async function getCoords(){
         myMap.businesses = processBusinesses(data)
         myMap.addMarkers()
     })
-    // const options = {method: 'GET', headers: {accept: 'application/json'}};
 
 
-
+   
 
 
 
